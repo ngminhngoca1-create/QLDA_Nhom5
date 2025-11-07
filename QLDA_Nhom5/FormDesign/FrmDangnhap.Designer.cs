@@ -40,6 +40,7 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.CBoxShowpassword = new System.Windows.Forms.CheckBox();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicUserID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicPassword)).BeginInit();
@@ -169,12 +170,22 @@
             this.BtnExit.UseVisualStyleBackColor = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(545, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FrmDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(681, 636);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.CBoxShowpassword);
             this.Controls.Add(this.TxtPassword);
@@ -213,5 +224,6 @@
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.CheckBox CBoxShowpassword;
         private System.Windows.Forms.Button BtnExit;
+        private System.Windows.Forms.Button button1;
     }
 }
