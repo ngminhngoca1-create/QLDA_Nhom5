@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45059B3A-1E38-42E4-93D6-356BD46E6713}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLDA_Nhom5</RootNamespace>
+    <AssemblyName>QLDA_Nhom5</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v24.1.Drawing, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DBHelper.cs" />
+    <Compile Include="FormDesign\FrmBaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmBaocao.Designer.cs">
+      <DependentUpon>FrmBaocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmDangnhap.Designer.cs">
+      <DependentUpon>FrmDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmLienhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmLienhe.Designer.cs">
+      <DependentUpon>FrmLienhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmNguoiquanly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmNguoiquanly.Designer.cs">
+      <DependentUpon>FrmNguoiquanly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyDoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyDoan.Designer.cs">
+      <DependentUpon>FrmQlyDoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyGVHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyGVHD.Designer.cs">
+      <DependentUpon>FrmQlyGVHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlySVTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlySVTH.Designer.cs">
+      <DependentUpon>FrmQlySVTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyTailieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmQlyTailieu.Designer.cs">
+      <DependentUpon>FrmQlyTailieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmQuanlyttin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmQuanlyttin.Designer.cs">
+      <DependentUpon>FrmQuanlyttin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmTaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmTaikhoan.Designer.cs">
+      <DependentUpon>FrmTaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmTrangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmTrangchu.Designer.cs">
+      <DependentUpon>FrmTrangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesign\FrmXemtailieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesign\FrmXemtailieu.Designer.cs">
+      <DependentUpon>FrmXemtailieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNguoixem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNguoixem.Designer.cs">
+      <DependentUpon>FrmNguoixem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDesign\FrmBaocao.resx">
+      <DependentUpon>FrmBaocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmDangnhap.resx">
+      <DependentUpon>FrmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmLienhe.resx">
+      <DependentUpon>FrmLienhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmNguoiquanly.resx">
+      <DependentUpon>FrmNguoiquanly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmQlyDoan.resx">
+      <DependentUpon>FrmQlyDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmQlyGVHD.resx">
+      <DependentUpon>FrmQlyGVHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmQlySVTH.resx">
+      <DependentUpon>FrmQlySVTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmQlyTailieu.resx">
+      <DependentUpon>FrmQlyTailieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmQuanlyttin.resx">
+      <DependentUpon>FrmQuanlyttin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmTaikhoan.resx">
+      <DependentUpon>FrmTaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmTrangchu.resx">
+      <DependentUpon>FrmTrangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesign\FrmXemtailieu.resx">
+      <DependentUpon>FrmXemtailieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNguoixem.resx">
+      <DependentUpon>FrmNguoixem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
